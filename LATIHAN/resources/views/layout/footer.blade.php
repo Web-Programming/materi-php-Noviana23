@@ -1,3 +1,3 @@
 <div>
-    <!-- Nothing worth having comes easy. - Theodore Roosevelt -->
+    <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
 </div>

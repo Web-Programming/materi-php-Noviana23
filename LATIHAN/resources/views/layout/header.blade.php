@@ -1,3 +1,3 @@
 <div>
-    <!-- We must ship. - Taylor Otwell -->
+    <!-- Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead -->
 </div>

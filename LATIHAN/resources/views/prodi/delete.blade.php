@@ -1,3 +1,3 @@
 <div>
-    <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
+    <!-- Life is available only in the present moment. - Thich Nhat Hanh -->
 </div>

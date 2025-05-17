@@ -1,3 +1,8 @@
-<div>
-    <!-- I have not failed. I've just found 10,000 ways that won't work. - Thomas Edison -->
-</div>
+@extends('layouts.master')
+
+@section('title', 'Detail Prodi')
+
+@section('content')
+<h1>Detail Prodi</h1>
+<!-- Tampilkan detail prodi di sini -->
+@endsection

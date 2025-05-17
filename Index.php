@@ -12,7 +12,7 @@
     <hr/>
     <h4>Menulis Variabel di PHP</h4>
     <?php
-        $nama = "Novi"; //string
+        $nama = "Steven Lim"; //string
         $umur = 19; //number
         $perempuan = true; //boolean
         $saldo = null; //null
