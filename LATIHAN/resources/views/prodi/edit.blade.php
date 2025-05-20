@@ -1,6 +1,6 @@
 @extends('layout.master')
 
-@section('title', "Halaman Detail Prodi")
+@section('title', "Halaman List Prodi")
 
 @section('content')
         <!--begin::App Content Header-->
@@ -33,7 +33,7 @@
                 <!-- Default box -->
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">Program Studi : ....</h3>
+                    <h3 class="card-title">Edit Program Studi</h3>
                     <div class="card-tools">
                       <button
                         type="button"
@@ -55,10 +55,31 @@
                     </div>
                   </div>
                   <div class="card-body">
-
-                    Form Edit Progam Studi
-
+                @if (session('status'))
+                  <div class = "alert alert = success">
+                    ((session ('status')))
                   </div>
+                @endif
+                <form method="post" action="{{ url("prodi/".$prodi->id) }}">
+                  @csrf
+                  @method("PUT")
+                  <div class="mb-3">
+                    <label >Nama prodi</label>
+                    <input type="text" name="nama" class="form-control" value="{{ old('nama', $prodi->nama) }}">
+                    @Error('nama')
+                      <div class="text-danger">{{ $message }}</div>
+                    @enderror
+                  </div>
+                   <div class="mb-3">
+                    <label >Kode Prodi</label>
+                    <input type="text" name="kode_prodi" class="form-control" value="{{ old('kode_prodi',$prodi->kode_prodi) }}">
+                    @Error('kode_prodi')
+                      <div class="text-danger">{{ $message }} </div>
+                    @enderror
+                  </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+
+                  </form>
                   <!-- /.card-body -->
                   <div class="card-footer">Footer</div>
                   <!-- /.card-footer-->
@@ -71,5 +92,3 @@
           <!--end::Container-->
         </div>
         <!--end::App Content-->
-@endsection
-
